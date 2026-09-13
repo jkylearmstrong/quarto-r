@@ -70,7 +70,7 @@ The resulting R script could also be \code{source()}d in R, as any \code{eval = 
 This function relies on static analysis of the Quarto document by \verb{quarto inspect}. This means that
 any \pkg{knitr} specific options like \verb{child=} or specific feature like \code{\link[knitr:read_chunk]{knitr::read_chunk()}} are not supported.
 They rely on tangling or knitting by \pkg{knitr} itself. For this support,
-one should look at \code{\link[knitr:chunk_hook]{knitr::hook_purl()}} or \code{\link[knitr:knit]{knitr::purl()}}.
+one should look at \code{\link[knitr:hook_purl]{knitr::hook_purl()}} or \code{\link[knitr:purl]{knitr::purl()}}.
 }
 }
 \examples{

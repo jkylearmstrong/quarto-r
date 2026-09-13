@@ -24,6 +24,7 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Christophe Dervieux \email{cderv@posit.co} (\href{https://orcid.org/0000-0003-4474-2498}{ORCID})
   \item JJ Allaire \email{jj@posit.co} (\href{https://orcid.org/0000-0003-0174-9868}{ORCID})
 }
 
