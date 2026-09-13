@@ -1,0 +1,7 @@
+Add titlepage_pdf() wrapper, helper, docs, and tests
+
+Add a public titlepage_pdf() that uses the nmfs-opensci/quarto_titlepages extension to
+render PDF title pages. Refactor preparation into prepare_titlepage_dir(), add image support,
+add unit and integration tests, and document find_quarto. Fix roxygen warnings and update tests.
+
+Co-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>

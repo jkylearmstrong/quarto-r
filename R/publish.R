@@ -2,8 +2,6 @@
 #'
 #' Publish Quarto documents to Posit Connect, ShinyApps, and RPubs
 #'
-#' @inheritParams rsconnect::deployApp
-#'
 #' @param input The input file or project directory to be published. Defaults to
 #'   the current working directory.
 #' @param name Name for publishing (names must be unique within an account).

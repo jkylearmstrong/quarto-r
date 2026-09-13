@@ -33,6 +33,22 @@ quarto_not_found_msg <- c(
   "Please make sure you have installed and added Quarto to your PATH or set the QUARTO_PATH environment variable."
 )
 
+#' Locate the quarto executable or abort
+#'
+#' A small helper that wraps [quarto_path()] and throws a helpful error if the
+#' quarto CLI cannot be found. This is used internally by other functions that
+#' need to call the Quarto binary.
+#'
+#' @return A string with the path to the quarto executable. If not found this
+#'   function aborts with a user-friendly error message.
+#'
+#' @examples
+#' if (interactive()) {
+#'   # returns path or aborts
+#'   try(find_quarto(), silent = TRUE)
+#' }
+#'
+#' @keywords internal
 find_quarto <- function() {
   path <- quarto_path()
   if (is.null(path)) {
